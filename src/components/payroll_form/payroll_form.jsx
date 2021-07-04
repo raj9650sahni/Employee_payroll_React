@@ -1,22 +1,23 @@
 import React, { useState,useEffect } from 'react';
 import profile1 from '../../assets/profile-images/Ellipse -3.png';
 import profile2 from '../../assets/profile-images/Ellipse -1.png';
-import profile3 from '../../assets/profile-images/Ellipse -4.png';
+import profile3 from '../../assets/profile-images/Ellipse -8.png';
 import profile4 from '../../assets/profile-images/Ellipse -7.png';
 
 import './payroll_form.scss';
 
 import logo from '../../assets/images/logo.png'
 import { useParams,Link,withRouter } from 'react-router';
+import EmployeeService from '../../services/employee-service';
 
 const PayrollForm = (props) => {
     let initialValue  = {
         name:'',
         profileArray :[
-            {url:"../../assets/profile-images/Ellipse-3.png"},
-            {url:"../../assets/profile-images/Ellipse-1.png"},
-            {url:"../../assets/profile-images/Ellipse-4.png"},
-            {url:"../../assets/profile-images/Ellipse-7.png"}
+            {url:"../../assets/profile-images/Ellipse -3.png"},
+            {url:"../../assets/profile-images/Ellipse -1.png"},
+            {url:"../../assets/profile-images/Ellipse -8.png"},
+            {url:"../../assets/profile-images/Ellipse -7.png"}
 
         ],
         allDepartment:[
@@ -116,6 +117,31 @@ const PayrollForm = (props) => {
 
     const save = async (event) => {
         event.preventDefault();
+        console.log("save");
+
+        if (await validData()) {
+            console.log('error', formValue);
+            return;
+        }
+
+        let object = {
+            name:formValue.name,
+            departMentValue:formValue.departMentValue,
+            gender:formValue.gender,
+            salary:formValue.salary,
+            startDate: '${formValue.day} ${formValue.month} ${formValue.year} ',
+            notes:formValue.notes,
+            id:'',
+            profileUrl:formValue.profileUrl,
+
+        }
+
+        EmployeeService.addEmployee(object).then(data => {
+            console.log("adata Added");
+            props.history.push('')
+        }).catch(err => {
+            console.log("error While Add");
+        })
     }
     const reset= () => {
         setForm({...initialValue,id:formValue.id,isUpdate:formValue.isUpdate});

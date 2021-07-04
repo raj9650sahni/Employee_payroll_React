@@ -1,0 +1,31 @@
+{
+  "employee": [
+    { 
+      "name": "Raj Kishore",
+      "departMent": [
+        "Engineer"
+      ],
+      "gender": "Male",
+      "salary": "50000",
+      "startDate": "1 Jan 2018",
+      "notes": "Hey its' me",
+      "id": 9,
+      "profileUrl": "../../assets/profile-images/Ellipse -5.png",
+     
+    },
+    {
+   
+    "name": "Shivam Mishra",
+    "departMent": [
+      "Engineer"
+    ],
+    "gender": "Male",
+    "salary": "40000",
+    "startDate": "1 Feb 2018",
+    "notes": "Hey its' shivam ",
+    "id": 6,
+    "profileUrl": "../../assets/profile-images/Ellipse -6.png"
+   
+  }
+  ]
+}
