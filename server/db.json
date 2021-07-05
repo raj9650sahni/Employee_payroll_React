@@ -1,0 +1,68 @@
+{
+  "employee-payroll": [
+    {
+      "id": 10,
+      "name": "Shivam Mishra",
+      "profilePicture": "../../assets/profile-images/Ellipse -1.png",
+      "gender": "Female",
+      "departments": [
+        "Engineer",
+        "HR"
+      ],
+      "salary": 40000,
+      "startDate": "2021-06-12T18:30:00.000Z",
+      "note": "friend"
+    },
+    {
+      "id": 13,
+      "name": "Raj Sahni",
+      "profilePicture": "../../assets/profile-images/Ellipse -3.png",
+      "gender": "Male",
+      "departments": [
+        "HR"
+      ],
+      "salary": 40000,
+      "startDate": "2021-06-30T18:30:00.000Z",
+      "notes": "from mars"
+    },
+    {
+      "id": 14,
+      "name": "Sumit Ahuja",
+      "profilePicture": "../../assets/profile-images/Ellipse -3.png",
+      "gender": "Male",
+      "departments": [
+        "HR"
+      ],
+      "salary": 40000,
+      "startDate": "2021-06-30T18:30:00.000Z",
+      "notes": "jkh"
+    },
+    {
+      "id": 15,
+      "name": "Raj Sahni",
+      "profilePicture": "../../assets/profile-images/Ellipse -3.png",
+      "gender": "Male",
+      "departments": [
+        "HR"
+      ],
+      "salary": 40000,
+      "startDate": "2021-06-30T18:30:00.000Z",
+      "notes": "xvsfd"
+    },
+    {
+      "id": 16,
+      "name": "Dinker",
+      "profilePicture": "../../assets/profile-images/Ellipse -2.png",
+      "gender": "Male",
+      "departments": [
+        "Sales",
+        "Finance",
+        "Engineer",
+        "HR"
+      ],
+      "salary": "50000",
+      "startDate": "2021-06-30T18:30:00.000Z",
+      "notes": "wdewa"
+    }
+  ]
+}
